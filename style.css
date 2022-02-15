@@ -126,6 +126,15 @@ body {
   }
   .encontranos { grid-area: 1 / 1 / 2 / 2; }
   .comunicate-1 { grid-area: 1 / 2 / 2 / 4; }
-  .seguinos-1 { grid-area: 1 / 3 / 2 / 4; } 
-  
-  
+  .seguinos-1 { grid-area: 1 / 3 / 2 / 4; }
+
+  .alfajores:hover {
+    transform: scale(2);
+    transition: 4s;
+
+  }
+  .bañado:hover {
+    transform: scale(2);
+    transition: 4s;
+
+  }
