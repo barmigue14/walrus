@@ -1,4 +1,5 @@
 *
+
 /* header */
 .logo-walrus {
     display: block;
@@ -21,20 +22,27 @@ p { font-family: 'Mochiy Pop P One', sans-serif;
 
 
 ul {
-    border-color: cornflowerblue;
+    border-color: rgb(237, 216, 100);
     border-style: double;
     border-width: thick;
     padding: 50px;  
     font-family: 'Mochiy Pop P One', sans-serif;
-    color: #592506;
+    color: #df5708;
     font-size: 35px;
     text-align: justify;
-    background-color: #db8d56;
+    background-color: rgb(110, 77, 45);
 
 }
 
+  
+
+.barra-walrus {
+  background-image: url(images/banner.jpg);
+  background-size: cover;
+  
+}
 body { 
-    background-image: url(images/fondo.jpg);
+    background-image: url(images/fondo-2.jpg);
     background-size: cover;
 }
 /* fin header */
@@ -73,13 +81,16 @@ body {
     display: flex;   
     grid-area: walrus-1;
     align-self: center;
+    text-align: center;
   
 
   }
   
   .walrus-2 {
-   
+    display: flex;   
     grid-area: walrus-2;
+    align-self: center;
+    text-align: center;
   }
   
   .alfajores {
@@ -106,6 +117,7 @@ body {
     display: flex;
     justify-content: space-evenly;
 
+
 }
 .whatsapp { 
   display: flex;
@@ -113,9 +125,11 @@ body {
     height: 45px;
     
 }
+
 .correo { 
     width: 45px;
     height: 45px;
+
 }
 .location { 
     width: 45px;
@@ -130,19 +144,68 @@ body {
     width: 45px;
     height: 45px;
 }
-.container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
+.footer-container {
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-template-columns: auto auto auto; 
+  grid-template-rows: auto auto; 
+  gap: 0px 0px; 
+   grid-template-areas: 
+    "encontranos comunicate-1 seguinos-1"
+    "mapa logos redes"; 
+  justify-content: space-evenly; 
+  justify-items: center; 
+  align-items:center;
+}
+.encontranos { grid-area: encontranos;
+  font-size: 35px;
+}
+.mapa { grid-area: mapa; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logos { grid-area: logos; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.redes { grid-area: redes;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.redes:hover {
+  animation: wow 4s;
+}
+
+@keyframes wow {
+  0% { background-color: aquamarine;}
+  25% {background-color: blue;}
+  50% {background-color: rebeccapurple;}
+  75% {background-color: tomato;}
+  100% {background-color: greenyellow;}
+}
+
+.comunicate-1 { grid-area: comunicate-1;
+  font-size: 35px; }
+.seguinos-1 { grid-area: seguinos-1;
+  font-size: 35px;
   }
-  .encontranos { grid-area: 1 / 1 / 2 / 2; }
-  .comunicate-1 { grid-area: 1 / 2 / 2 / 4; }
-  .seguinos-1 { grid-area: 1 / 3 / 2 / 4; }
+ 
+  @media screen and (max-width: 480px) {
+    body {
+      background-image: url(images/fondo.jpg);
+      }     
+    }
+ 
+  /* fin footer */
+
+
 
   
-  .comunicate-1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
