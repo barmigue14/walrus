@@ -37,6 +37,7 @@ p { font-family: 'Mochiy Pop P One', sans-serif;
 
 
 
+
 ul {
     border-color: rgb(237, 216, 100);
     border-style: double;
@@ -202,7 +203,7 @@ body {
 .redes:hover {
   animation: wow 4s;
 }
-
+/* ANIMACION */
 @keyframes wow {
   0% { background-color: aquamarine;}
   25% {background-color: blue;}
@@ -216,7 +217,7 @@ body {
 .seguinos-1 { grid-area: seguinos-1;
   font-size: 35px;
   }
- 
+ /* RESPONSIVE */
   @media screen and (max-width: 480px) {
     body {
       background-image: url(images/fondo.jpg);
