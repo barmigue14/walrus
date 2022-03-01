@@ -1,156 +1,14 @@
-*
-
-/* header */
-
-.header-container {  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr ;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "logo-walrus"
-    "link-container";
-}
-.link-container {
-  display: flex ;
-  flex-direction: column;
-}
-.inicio { grid-area: inicio; }
-
-.nosotros { grid-area: nosotros; }
-
-.productos { grid-area: productos; }
-
-.cuenta { grid-area: cuenta; }
-
-.contacto { grid-area: contacto; }
-
-.logo-walrus {
-  height: 250px;
-  justify-self: center; 
-  align-self: center; 
-  grid-area: logo-walrus; 
- }
-
-p { font-family: 'Mochiy Pop P One', sans-serif;
-}
+/* carrusel */
 
 
-
-
-ul {
-    border-color: rgb(237, 216, 100);
-    border-style: double;
-    border-width: thick;
-    padding-left: 0%;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    color: #df5708;
-    font-size: 35px;
-    text-align: justify;
-    background-color: rgb(110, 77, 45);
-
-}
-
-  
-
-.barra-walrus {
-  display: flex;
-   background-image: url(images/banner.jpg);
-  background-size: cover;
-  align-items: center;
-  justify-content: space-between;
-
-  
-}
-body { 
-    background-image: url(images/fondo-2.jpg);
-    background-size: cover;
-}
-/* fin header */
-
-/* inicio seccion fotos */
-.seccion-fotos {  display: grid;
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-items:center;
-    align-items:center;
-    grid-template-areas:
-      "alfajores bañado"
-      "walrus-1 walrus-2";
-  }
-  .alfajor-1 { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .alfajor-2 { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .bañado {
-    width: 25%;
-    
-    grid-area: bañado;
-  }
-  
-  .walrus-1 { 
-    display: flex;   
-    grid-area: walrus-1;
-    align-self: center;
-    text-align: center;
-  
-
-  }
-  
-  .walrus-2 {
-    display: flex;   
-    grid-area: walrus-2;
-    align-self: center;
-    text-align: center;
-  }
-  
-  .alfajores {
-    width: 25%; 
-    justify-self: end;    
-    grid-area: alfajores;
-  }
-  .alfajores:hover {
-    transform: scale(2);
-    transition: 4s;
-
-  }
-  .bañado:hover {
-    transform: scale(2);
-    transition: 4s;
-
-  }
-
-/* fin seccion fotos */
-
-
-  /* footer */
-.footer-container {
-    display: flex;
-    justify-content: space-evenly;
-
-
-}
 .whatsapp { 
   display: flex;
     width: 45px;
     height: 45px;
-    
 }
-
 .correo { 
     width: 45px;
     height: 45px;
-
 }
 .location { 
     width: 45px;
@@ -165,42 +23,8 @@ body {
     width: 45px;
     height: 45px;
 }
-.footer-container {
-  display: grid; 
-  grid-auto-flow: column; 
-  grid-template-columns: auto auto auto; 
-  grid-template-rows: auto auto; 
-  gap: 0px 0px; 
-   grid-template-areas: 
-    "encontranos comunicate-1 seguinos-1"
-    "mapa logos redes"; 
-  justify-content: space-evenly; 
-  justify-items: center; 
-  align-items:center;
-}
-.encontranos { grid-area: encontranos;
-  font-size: 35px;
-}
-.mapa { grid-area: mapa; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.logos { grid-area: logos; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-}
-.redes { grid-area: redes;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-
-.redes:hover {
+.col:hover {
   animation: wow 4s;
 }
 /* ANIMACION */
