@@ -1,4 +1,7 @@
-/* carrusel */
+body {
+  background-image: url(../walrus-lopez/images/fondo.jpg);
+  background-size: cover;
+}
 
 
 .whatsapp { 
