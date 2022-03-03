@@ -1,0 +1,8 @@
+@import "../scss/base/variables";
+
+body {
+	background-image: $bg-image;
+	background-size: cover;
+}
+
+@import "components/footer";

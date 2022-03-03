@@ -1,0 +1,31 @@
+body {
+  background-image: url(../base/bg/fondo.jpg);
+  background-size: cover;
+}
+
+.whatsapp {
+  width: 45px;
+  height: 45px;
+}
+
+.correo {
+  width: 45px;
+  height: 45px;
+}
+
+.location {
+  width: 45px;
+  height: 45px;
+}
+
+.instagram {
+  width: 45px;
+  height: 45px;
+}
+
+.facebook {
+  width: 45px;
+  height: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */
